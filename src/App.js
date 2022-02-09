@@ -41,19 +41,29 @@ function App() {
     mapNavigation: {
       enabled: true,
       buttonOptions: {
-        verticalAlign: 'bottom'
+        verticalAlign: 'bottom',
       }
     },
 
     colorAxis: {
       min: 0
     },
-
+  tooltip:{
+    animation: true,
+    backgroundColor: '#181818d6',
+    borderRadius: '6',
+    color: '#fff',
+    style:{
+      color:'#fff',
+      fontSize: '15'
+    }
+  },
     series: [{
       data: data,
       mapData: UzbekistanGeoData,
       type:'map',
-      name: 'Random data',
+      
+      
       states: {
         hover: {
           color: 'blue'
